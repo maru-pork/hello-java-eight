@@ -1,24 +1,24 @@
 **Marker Interface** - when a interface doesn't contain any method.  
 **Functional Interface** - one and only one abstract method.  
-**Lambda Expression** - syntax used to pass a block of code into a method that accepts a functional interface parameter.  
+**[Lambda Expression](https://github.com/rufomaryann/hello-java-eight/blob/master/src/com/ph/HelloLambda.java)** - syntax used to pass a block of code into a method that accepts a functional interface parameter.  
 
-## Syntax  
+## Syntax
 ```
 (double percentage) -> { return salary + (salary * percentage); }  
 method parameters | arrow token |  method body  
 ```
 
-## Predicate 
+## [Predicate](https://github.com/rufomaryann/hello-java-eight/blob/master/src/com/ph/HelloPredicate.java) 
 - a functional interface handling a very common scenario: a "test" method is invoked with a parameter, resulting in a boolean outcome
 - The type is Predicate<T> where T can be any type needed in the test.
 - single abstract method: boolean test(T t)
 
-## java.time
+## [java.time](https://github.com/rufomaryann/hello-java-eight/blob/master/src/com/ph/HelloLocalDate.java)
 - java.time = LocalDate, LocalDateTime, LocalTime, Period
 - LocalDate is immutable like String. Once LocalDate is created, you can't change it. If you want to change it, plusWeeks, minusDays.
 - No constructor for LocalDate. Static method is always used i.e. LocalDate.now.
 
-## Arrays
+## [Arrays](https://github.com/rufomaryann/hello-java-eight/blob/master/src/com/ph/HelloArrays.java)
 - Sorting and Searching arrays: java.util.Arrays
 - length is a read-only attribute of an array i.e. letters.length
 
@@ -26,7 +26,7 @@ method parameters | arrow token |  method body
 - Variable Arguments (...)
 - pass a variable number of arguments to a method
 
-## Collections
+## [Collections](https://github.com/rufomaryann/hello-java-eight/blob/master/src/com/ph/HelloCollections.java)
 - java.util [Collections (List, Set, Queue) and Maps]
 ```
 Collections (interface) - List(interface), Set(interface), Queue(interface)
@@ -69,7 +69,7 @@ Collections.EMPTY_LIST
 - java.lang.Comparable
 - java.util.Comparator
 
-## Throwable
+## [Throwable](https://github.com/rufomaryann/hello-java-eight/blob/master/src/com/ph/HelloExceptions.java)
 - when a problem occurs within a method, the method creates an object (java.lang.Throwable) and hands it off to the runtime system.
 - the act of sending a Throwable object to the runtime is called "throwing".
 - java.lang.Throwable - java.lang.Error, java.lang.Exception
@@ -101,7 +101,7 @@ Collections.EMPTY_LIST
 - they must be checked for and handled (try-catch block or re-throwing the exception)
 - i.e. SQLException and FileNotFoundException
 
-## Streams
+## [Streams](https://github.com/rufomaryann/hello-java-eight/blob/master/src/com/ph/HelloStreams.java)
 - key abstraction in Java 8 for processing collections of values and specifying what you want to have done, leaving the scheduling of operations to the implementation
 - follow "what, not how" principle
 - pipeline of operations int three stages:
